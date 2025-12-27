@@ -1,3 +1,46 @@
+# Hackathon II — Evolution of Todo Development Guidelines
+
+Auto-generated from all feature plans. Last updated: 2025-12-27
+
+## Active Technologies
+
+- Python 3.13+ (001-console-todo-app)
+
+## Project Structure
+
+```text
+src/
+tests/
+```
+
+## Commands
+
+cd src; pytest; ruff check .
+
+## Code Style
+
+Python 3.13+: Follow standard conventions
+
+## Recent Changes
+
+- 001-console-todo-app: Added Python 3.13+
+
+<!-- MANUAL ADDITIONS START -->
+
+## Spec-Driven Development Workflow
+
+This project follows Spec-Driven Development (SDD) using the Spec-Kit methodology. When making changes or adding features, follow this workflow:
+
+1. **Specification Phase**: Create or update the feature specification in `specs/<feature>/spec.md`
+2. **Planning Phase**: Run `/sp.plan` to generate architecture plan in `specs/<feature>/plan.md`
+3. **Task Generation Phase**: Run `/sp.tasks` to generate implementation tasks in `specs/<feature>/tasks.md`
+4. **Implementation Phase**: Run `/sp.implement` to execute the tasks automatically
+5. **Documentation Phase**: Create PHRs to document significant changes
+
+This ensures all changes are traceable from requirements through implementation.
+
+<!-- MANUAL ADDITIONS END -->
+
 # Claude Code Rules
 
 This file is generated during init for the selected agent.
@@ -49,7 +92,7 @@ After completing requests, you **MUST** create a PHR (Prompt History Record).
 2) Generate title
    - 3–7 words; create a slug for the filename.
 
-2a) Resolve route (all under history/prompts/)
+2a) Resolve route (all under history/prompts/):
   - `constitution` → `history/prompts/constitution/`
   - Feature stages (spec, plan, tasks, red, green, refactor, explainer, misc) → `history/prompts/<feature-name>/` (requires feature context)
   - `general` → `history/prompts/general/`
@@ -113,7 +156,7 @@ You are not expected to solve every problem autonomously. You MUST invoke the us
 1.  **Ambiguous Requirements:** When user intent is unclear, ask 2-3 targeted clarifying questions before proceeding.
 2.  **Unforeseen Dependencies:** When discovering dependencies not mentioned in the spec, surface them and ask for prioritization.
 3.  **Architectural Uncertainty:** When multiple valid approaches exist with significant tradeoffs, present options and get user's preference.
-4.  **Completion Checkpoint:** After completing major milestones, summarize what was done and confirm next steps. 
+4.  **Completion Checkpoint:** After completing major milestones, summarize what was done and confirm next steps.
 
 ## Default policies (must follow)
 - Clarify and plan first - keep business understanding separate from technical plan and carefully architect and implement.
@@ -179,10 +222,7 @@ Instructions: As an expert architect, generate a detailed architectural plan for
    - Definition of Done (tests, scans).
    - Output Validation for format/requirements/safety.
 
-9. Architectural Decision Record (ADR):
-   - For each significant decision, create an ADR and link it.
-
-### Architecture Decision Records (ADR) - Intelligent Suggestion
+9. Architectural Decision Record (ADR) - Intelligent Suggestion
 
 After design/architecture work, test for ADR significance:
 

@@ -1,0 +1,5 @@
+# Console Todo App - Requirements
+# Python 3.13+ requirements for Phase I CLI app
+
+# No external dependencies needed - uses only standard library
+# This file exists to support UV package management as specified in the plan
