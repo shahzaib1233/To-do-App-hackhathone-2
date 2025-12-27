@@ -14,7 +14,11 @@
       "Bash(timeout 3s python -m todo_app.main)",
       "Bash(git pull origin main --allow-unrelated-histories)",
       "Bash(git commit -m \"Resolve merge conflict in README.md\")",
-      "Bash(git push -u origin master:main)"
+      "Bash(git push -u origin master:main)",
+      "Bash(git commit -m \"Add all project folders including .specify, history, specs, and src\")",
+      "Bash(git push origin main)",
+      "Bash(git push origin master)",
+      "Bash(git add .claude/settings.local.json)"
     ]
   }
 }
