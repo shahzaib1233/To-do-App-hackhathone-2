@@ -84,8 +84,3 @@ docs/_build/
 
 # CLAUDE.md specific
 .history/
-.specify/
-history/
-specs/
-specs-history/
-src/
